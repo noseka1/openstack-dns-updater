@@ -9,8 +9,8 @@ on the private network. You can easily change the script to store floating
 IP address in DNS instead.
 
 OpenStack DNS Updater works well on CentOS 7. You can copy it into your
-/usr/local/bin directory and run it as user "nova". See the accompanying
-systemd script. OpenStack DNS Updater logs into /var/log/nova/dns-updater.log
+`/usr/local/bin` directory and run it as user "nova". See the accompanying
+systemd script. OpenStack DNS Updater logs into `/var/log/nova/dns-updater.log`
 by default.
 
 For more information refer to:
