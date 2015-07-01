@@ -13,5 +13,9 @@ OpenStack DNS Updater works well on CentOS 7. You can copy it into your
 systemd script. OpenStack DNS Updater logs into `/var/log/nova/dns-updater.log`
 by default.
 
+For using Ubuntu (upstart) you can copy
+`openstack-dns-updater.upstart` to `/etc/init/openstack-dns-updater.conf` and
+run `service openstack-dns-updater start`.
+
 For more information refer to:
 http://alesnosek.com/blog/2015/05/31/openstack-dynamic-dns-updates/
