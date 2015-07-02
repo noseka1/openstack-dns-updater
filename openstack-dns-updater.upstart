@@ -1,0 +1,19 @@
+# openstack-dns-updater.upstart - run DNS updater script
+
+description	"OpenStack DNS Updater"
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+respawn
+respawn limit 10 5
+umask 022
+
+# The following is not needed when using /usr/bin/python
+# expect fork
+
+# /var/log/upstart/openstack-dns-updater.log should be empty
+# Logs to /var/log/nova/dns-updater.log
+console log
+
+exec /usr/bin/python /usr/local/bin/openstack-dns-updater.py
