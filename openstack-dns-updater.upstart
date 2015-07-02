@@ -16,4 +16,4 @@ umask 022
 # Logs to /var/log/nova/dns-updater.log
 console log
 
-exec /usr/bin/python /opt/openstack-dns-updater/openstack-dns-updater.py
+exec /usr/bin/python /usr/local/bin/openstack-dns-updater.py
